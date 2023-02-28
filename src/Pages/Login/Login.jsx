@@ -111,7 +111,7 @@ function handleSubmit(e){
           <Wrapper>
         <TextField  value={email} onChange={(e)=>setEmail(e.target.value)}  variant='standard' label='Enter Email'
         style={{width:'21.5rem'}}/>{emailErr}
-        <TextField onChange={()=>handlePassword()} variant='standard' label='Enter Mobile number'
+        <TextField  variant='standard' label='Enter Mobile number'
         style={{width:'21.5rem'}}/>{phoneErr}
         <Typography style={{width:'23rem',fontSize:'12px',color:'#878787'}}>By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</Typography>
         <Loginbtn onClick={handleSubmit}>CONTINUE</Loginbtn>
