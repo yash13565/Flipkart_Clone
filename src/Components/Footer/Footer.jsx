@@ -37,9 +37,9 @@ function Footer() {
         </div>
         <div className={style.fourthdiv}>
           <h5>SOCIAL</h5>
-          <a href="https://www.facebook.com" target='_blank'>Facebook</a>
-          <a href="https://www.twitter.com" target='_blank'>Twitter</a>
-          <a href="https://www.youtube.com" target='_blank'>Youtube</a>
+          <a href="https://www.facebook.com" target='_blank' rel=''>Facebook</a>
+          <a href="https://www.twitter.com" target='_blank' rel=''>Twitter</a>
+          <a href="https://www.youtube.com" target='_blank' rel=''>Youtube</a>
         </div>
         <div className={style.line}>
      
@@ -54,7 +54,6 @@ function Footer() {
         </div>
         </div>
         <div className={style.seventhdiv}>
-       
           <span ><WorkIcon/></span><h6>Become a Seller</h6>
           <span><MdStars/></span><h6>Advertise</h6>
           <span><ImGift/></span><h6>Gift Cards</h6>

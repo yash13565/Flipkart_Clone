@@ -10,7 +10,6 @@ import Caraousel4 from '../../Components/Caraousel4/Caraousel4'
 import Caraousel5 from '../../Components/Caraousel5/Caraousel5'
 import Caraousel6 from '../../Components/Caraousel6/Caraousel6'
 import Footer from '../../Components/Footer/Footer'
-import {useNavigate} from 'react-router-dom'
 function Home() {
   
   return (

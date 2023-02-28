@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Dialog from '@mui/material/Dialog';
-import { TextField ,Box, Button,Typography,styled} from '@mui/material';
-import { isValidEmail,isValidMobile } from '../../Validations/Helper';
+import { TextField ,Box,Typography,styled} from '@mui/material';
+// import { isValidEmail,isValidMobile } from '../../Validations/Helper';
 function Login({open,setOpen}) {
   const[email,setEmail]=useState('')
   const[phoneNo,setPhoneNo]=useState('')
@@ -90,7 +90,7 @@ function handleSubmit(e){
     <div>
         <Dialog open={open} onClose={handleClose} PaperProps={{sx:{maxWidth:'unset'}}}>
           <Component>
-            {istoggle.view=='login'?
+            {istoggle.view==='login'?
             <Box style={{display:'flex',height:'100%'}}>
          <Image>
           <Typography variant='h5' style={{color:'white',fontWeight:'600'}}>Login</Typography>

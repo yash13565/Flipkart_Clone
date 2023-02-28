@@ -20,7 +20,7 @@ function Caraousel2() {
     
      <Carousel.Item key={i}>
        <div  onClick={()=>handleData(e)} key={i} >
-       <img className={style.caraimg} width="120px" src={e.image} />
+       <img className={style.caraimg} width="120px" src={e.image} alt='yash.jpeg'/>
        <h2>{e.title}</h2>
         <h3>{e.price}</h3>
         <h4>{e.model}</h4>

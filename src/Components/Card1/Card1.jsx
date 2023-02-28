@@ -2,10 +2,9 @@ import React from 'react'
 import style from './Card1.module.css'
 import {useRecoilValue} from 'recoil'
 import { imgData} from '../ConstData/Constdata'
-import Carousel from 'react-bootstrap/Carousel';
 import {useNavigate} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from '../Navbar/Navbar';
+
 function Card1() {
   const navigate=useNavigate()
     let data=useRecoilValue(imgData)

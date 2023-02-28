@@ -6,7 +6,7 @@ import Carousel from 'better-react-carousel'
 import {useNavigate} from 'react-router-dom'
 
 function Caraousel5() {
-  let data=useRecoilValue(atom2).filter((e)=>e.id==3)
+  let data=useRecoilValue(atom2).filter((e)=>e.id===3)
   const navigate=useNavigate()
   function handleData(e){
     localStorage.setItem('clickProduct',JSON.stringify(e))
