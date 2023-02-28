@@ -1,0 +1,87 @@
+.maincontainer{
+    height: 22rem;
+    width: 100%;
+    background-color: #172337;
+    color: white;
+    display: flex;
+    /* gap: 5rem; */
+    padding-top: 2rem;
+    justify-content: space-evenly;
+}
+.seventhdiv{
+    display: flex;
+    background-color: #172337;
+    padding-top: 2rem;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding-left: 6rem; */
+}
+.sixthdiv{
+    width: 21rem;
+    padding-right: 6rem;
+}
+.fifthdiv{
+    width: 25rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+.fourthdiv{
+    display: flex;
+    flex-direction: column;
+}
+.fourthdiv a{
+    color: white;
+    text-decoration: none;
+}
+.maincontainer h5{
+    color: #878787;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+.seventhdiv h6{
+    /* margin-right: 7rem; */
+    margin-top: -2.5rem;
+}
+.seventhdiv h5{
+    margin-top: -2.5rem;
+}
+.seventhdiv span{
+    color: #FFCB00;
+    margin-top: -3.4rem;
+    font-size: 1.2rem;
+    margin-left: 3.5rem;
+}
+.seventhdiv img{
+    margin-top: -3rem;
+    background-color: white;
+}
+.line{
+    /* border-left: 8px; */
+
+    border-left: 1px solid #878787;
+            height: 200px;
+            position:absolute;
+            left: 50%;
+}
+.firstdiv h5{
+    margin-left: 3px;
+}
+.secdiv h5{
+    margin-left: 2px;
+}
+.thirddiv h5{
+    margin-left: 2px;
+}
+.fourthdiv h5{
+    margin-left: 2px;
+}
+.fifthdiv h5{
+    margin-left: 1px;
+}
+.sixthdiv h5{
+    margin-left: 1px;
+}
+.seventhdiv h6{
+    margin-left: -60px;
+}

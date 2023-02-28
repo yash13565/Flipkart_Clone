@@ -1,0 +1,110 @@
+.mainCard{
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 7px 0.2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* padding-top: 4rem; */
+}
+.fash{
+    margin-top: 1.6rem;
+}
+.fash:hover{
+    color:#2874f0;
+    cursor: pointer;
+}
+.mob:hover{
+    color:#2874f0;
+    cursor: pointer;
+}
+.elec:hover{
+    color:#2874f0;
+    cursor: pointer;
+}
+.appliance:hover{
+    color:#2874f0;
+    cursor: pointer;
+}
+.beauty:hover{
+    color:#2874f0;
+    cursor: pointer;
+}
+.fash img{
+    margin-left: 1rem;
+    margin-top: 3.5rem;
+}
+.mob img{
+    margin-left: 0.3rem;
+    margin-top: 3.5rem;
+    
+}
+.elec img{
+    margin-left: 0.5rem;
+    margin-top: 3.5rem;
+}
+.appliance img{
+    margin-left: 0.5rem;
+    margin-top: 3.5rem;
+}
+.beauty img{
+   
+    margin-top: 3.5rem;
+}
+.fash h3{
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    font-size:1rem;
+}
+.mob h3{
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    font-size:1rem;
+}
+.elec h3{
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    font-size:1rem;
+}
+.appliance h3{
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    font-size:1rem;
+}
+.beauty h3{
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    font-size:1rem;
+   
+}
+@media screen and  (max-width:556px) {
+    .mainCard{
+        padding-top: 0rem;
+    }
+    .fash img{
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+    
+    .fash h3{
+        font-size:0.5rem;
+    }
+    .mob h3{
+        font-size:1rem;
+    }
+    .elec h3{
+        font-size:1rem;
+    }
+    .appliance h3{
+        font-size:1rem;
+    }
+    .beauty h3{
+        font-size:1rem;
+    }
+
+}

@@ -1,0 +1,26 @@
+.caraimg{
+    height: 20rem;
+    width: 100%;
+    margin-top: 1rem;
+    background-size: cover;
+    background-position: center center;
+}
+.maincara{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+@media screen and (max-width:1024px) {
+  .caraimg{
+    height: 13rem;
+  }
+}
+@media screen and (max-width:768px) {
+  .caraimg{
+    height: 10rem;
+  }
+}
+@media screen and (max-width:476px) {
+  .caraimg{
+    height: 5rem;
+  }
+}
