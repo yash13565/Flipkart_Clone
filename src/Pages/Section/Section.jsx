@@ -18,7 +18,7 @@ function Section() {
     let renderData = datas.filter(x => x.text === xyz)
     setModelData(renderData)
     console.log(renderData, 'i am render')
-  }, [xyz])
+  }, [datas,xyz])
   console.log(modelData, "hii ia mdata1")
   const navigate = useNavigate()
   function handleData(x){

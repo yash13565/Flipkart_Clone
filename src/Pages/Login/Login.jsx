@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import Dialog from '@mui/material/Dialog';
 import { TextField ,Box,Typography,styled} from '@mui/material';
-// import { isValidEmail,isValidMobile } from '../../Validations/Helper';
 function Login({open,setOpen}) {
   const[email,setEmail]=useState('')
-  const[phoneNo,setPhoneNo]=useState('')
-  const[emailErr,setEmailErr]=useState('')
-  const[phoneErr,setPhoneErr]=useState('')
+  
   function handleClose(){
     setOpen(false)
   }
@@ -26,11 +23,7 @@ const toggleSignup = () =>{
 const toggleLogin = () =>{
   setIsToggle(intialValue.login)
 }
-// function handleEmail(event){
-//   setEmail(event.target.value)
-//   console.log(event.target.value)
-  
-// }
+
 function handleSubmit(e){
    e.preventDefault()
   
@@ -110,9 +103,9 @@ function handleSubmit(e){
          </Image>
           <Wrapper>
         <TextField  value={email} onChange={(e)=>setEmail(e.target.value)}  variant='standard' label='Enter Email'
-        style={{width:'21.5rem'}}/>{emailErr}
+        style={{width:'21.5rem'}}/>
         <TextField  variant='standard' label='Enter Mobile number'
-        style={{width:'21.5rem'}}/>{phoneErr}
+        style={{width:'21.5rem'}}/>
         <Typography style={{width:'23rem',fontSize:'12px',color:'#878787'}}>By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</Typography>
         <Loginbtn onClick={handleSubmit}>CONTINUE</Loginbtn>
         <Loginbtn1 onClick={()=>toggleLogin()} >Existing User?Log in</Loginbtn1>
