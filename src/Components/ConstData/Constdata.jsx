@@ -274,7 +274,7 @@ export const atom2=atom({
       text:'Appliances'
     },
     {id:3,
-      image:'https://shop.panasonic.com/sites/default/files/salsify/product/image/8e576d09334e84158c2e192ba960c85b2425f088.jpg',
+      image:'https://www.nepal.ubuy.com/productimg/?image=aHR0cHM6Ly9pNS53YWxtYXJ0aW1hZ2VzLmNvbS9hc3IvZDY5MGNjZmUtZDlmNy00OGM1LWFiM2EtNzVhOTM5Y2I0ZWE5LjQ5YTQyMGQxYmEwOWFmMTZjMDJlNjE1MjhmZWJjOTkxLmpwZWc.jpg',
       title:'Rice Maker',
       price:` Buy Now Rs9,999`,
       model:'Panasonic',
@@ -282,7 +282,7 @@ export const atom2=atom({
     },
     {id:3,
       image:"https://d2xamzlzrdbdbn.cloudfront.net/products/9a6e6a23-70d9-4f36-ac57-70047f2d6c1821221330_416x416.jpg",
-      title:'Doubledoor Fridge',
+      title:' Fridge',
       price:`From Rs25,999`,
       model:'L.G.,Samsung,Whirlpool',
       text:'Electronics'
