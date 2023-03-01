@@ -1,18 +1,16 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import { useRecoilState} from 'recoil'
 import { addCart } from '../../Components/ConstData/Constdata'
 import Footer from '../../Components/Footer/Footer'
 import Navbar from '../../Components/Navbar/Navbar'
 import style from './Cart.module.css'
-
 function Cart() {
-    const navigate = useNavigate()
+    
     const[addDetails,setAddDetails]=useRecoilState(addCart)
     function handleDelte(x){
        const delData= addDetails.filter((e)=>e.title!==x.title)
        setAddDetails([...delData])
-       navigate('/')
+
     }
   return (
     <>
