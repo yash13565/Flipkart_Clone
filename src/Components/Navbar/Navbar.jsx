@@ -8,13 +8,22 @@ import {Link} from 'react-router-dom'
 import Login from '../../Pages/Login/Login'
 import { addCart } from '../ConstData/Constdata'
 import { useRecoilValue } from 'recoil'
+import { atom2 } from '../ConstData/Constdata'
+import { useNavigate } from 'react-router-dom'
 
 function Navbar() {
     const[open,setOpen]=useState(false)
+    const[input,setInput]=useState('')
+    const navigate=useNavigate()
     function handleDialog(){
         setOpen(true)
     }
     let myCartdata=useRecoilValue(addCart)
+    let filterData=useRecoilValue(atom2)
+    function handleNavigation(x){
+        localStorage.setItem('clickProduct',JSON.stringify(x))
+        navigate(`/product/${x.title}`)
+    }
     return (
         <>
         <div className={style.mainnav}>
@@ -23,9 +32,18 @@ function Navbar() {
            <h4>Explore <span className={style.plus}> plus<GiSharpShuriken/></span></h4>
            </div>
            <div className={style.inputfield}>
-            <input type="text" className={style.icon} placeholder='Search for products,brands and more' />
+            <input onChange={(e)=>setInput(e.target.value)} type="text" className={style.icon} placeholder='Search for products,brands and more' />
             <div className={style.searchicons}><IoSearchSharp/></div>
            </div>
+           {
+            input.length>=2 ?
+           
+           <div className={style.filter}>
+            {
+                filterData.filter((x)=>x.title.toLowerCase().includes(input.toLowerCase())).map((x,i)=><p onClick={()=>handleNavigation(x)} key={i}>{x.title}</p>)
+            }
+           </div>:''
+}
            <div className={style.btn}>
             <button onClick={handleDialog} >Login</button>
            </div>
@@ -39,7 +57,7 @@ function Navbar() {
            <Link to='/cart'> <h3><sub><HiShoppingCart className={style.cartlogo}/></sub>Cart {myCartdata.length}</h3></Link>
            </div>
        <Login open={open} setOpen={setOpen}/>
-       
+    
         </div>
       
        </>

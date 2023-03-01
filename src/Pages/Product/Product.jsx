@@ -18,7 +18,9 @@ function Product() {
     setData(mydata)
   }, [])
 function handleAddCart(){
-  setAddData([...addData,data])
+  const _data={...data}
+  _data.unique=Math.floor(Math.random()*1000)
+  setAddData([...addData,_data])
 }
 console.log(addData,'hii')
   return (
