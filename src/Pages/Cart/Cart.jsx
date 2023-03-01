@@ -26,9 +26,12 @@ function Cart() {
             addDetails.map((x,i)=>
             <div className={style.cartData} key={i} >
             <img src={x.image} alt="cart.jpeg" height='80%' />
-            {/* <h6>{x.title}</h6>
-            <h6>{x.price}</h6> */}
-            <button onClick={()=>handleDelte(x)}>Delete</button>
+            <button className={style.btn} onClick={()=>handleDelte(x)}>Delete</button>
+            <div className={style.cartitems}>
+            <h6>{x.title}</h6>
+            <h6>{x.price}</h6> 
+            <button className={style.btn1}>Add More </button>
+            </div>
             </div>  
             )
         }

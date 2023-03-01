@@ -6,8 +6,12 @@
     top: 0;
 }
 .cartData{
-    height: 20rem;
+    height: 15rem;
+    display: flex
 
+}
+.cartData img{
+    width: 20%;
 }
 .back{
     display: flex;
@@ -18,9 +22,26 @@
     font-size: 1.2rem;
 }
 .cartData h6{
-    margin-left: 3rem;
+    margin-left: -6rem;
 }
-.cartData button{
-    margin-left: 3rem;
-    margin-top: 4rem;
+
+
+.cartitems{
+    margin-top: 3rem;
+    height:0;
+}
+.btn{
+    margin-top: 7.9rem;
+    margin-left: 9rem;
+    width: 6.5rem;
+}
+.btn1{
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 6.5rem;
+    padding-left: 1rem;
+
 }
