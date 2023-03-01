@@ -17,3 +17,10 @@
     align-items: center;
     font-size: 1.2rem;
 }
+.cartData h6{
+    margin-left: 3rem;
+}
+.cartData button{
+    margin-left: 3rem;
+    margin-top: 4rem;
+}
