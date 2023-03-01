@@ -9,3 +9,11 @@
     height: 20rem;
 
 }
+.back{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: flex-end;
+    margin-right: 5rem;
+    align-items: center;
+    font-size: 1.2rem;
+}

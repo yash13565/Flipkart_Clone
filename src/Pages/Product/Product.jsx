@@ -9,7 +9,6 @@ import { addCart } from '../../Components/ConstData/Constdata'
 import { useRecoilState } from 'recoil'
 import { BsTagFill } from 'react-icons/bs'
 import Footer from '../../Components/Footer/Footer'
-import { Link } from 'react-router-dom'
 function Product() {
   const [data, setData] = useState({})
   const[addData,setAddData]=useRecoilState(addCart)
@@ -60,7 +59,7 @@ console.log(addData,'hii')
         </div>
       </div>
       <div className={style.btncartp}>
-      <Link to='/cart'> <button onClick={handleAddCart} className={style.btn1}><IoMdCart />ADD TO CART</button></Link> 
+      <button onClick={handleAddCart} className={style.btn1}><IoMdCart />ADD TO CART</button>
         <button onClick={() => alert('Buying option Will Be Available Soon')} className={style.btn2}><AiFillThunderbolt />BUY NOW</button>
       </div>
       <div style={{ marginTop: '5rem' }}>
