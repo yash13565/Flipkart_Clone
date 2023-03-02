@@ -40,7 +40,10 @@ function Navbar() {
            
            <div className={style.filter}>
             {
-                filterData.filter((x)=>x.title.toLowerCase().includes(input.toLowerCase())).map((x,i)=><p onClick={()=>handleNavigation(x)} key={i}>{x.title}</p>)
+                filterData.filter((x)=>x.title.toLowerCase().includes(input.toLowerCase())).map((x,i)=><div style={{display:'flex'}} onClick={()=>handleNavigation(x)} key={i}>
+                    <img src={x.image} alt="filter.jpeg" width='10%'/>
+                    <p style={{marginTop:'2.5rem',marginLeft:'2rem'}}>{x.title}</p>
+                </div>)
             }
            </div>:''
 }
