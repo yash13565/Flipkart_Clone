@@ -15,13 +15,14 @@ function Home() {
   return (
     <>
     <div>
-      <Navbar/></div>
+      <Navbar/>
+      </div>
       <div className={style.mainCard}>
      <Card/>
       </div>
-    
+    <div>
       <Caraousel1/>
-
+      </div>
 <div className={style.caraContainer}>
         <Card1/>
         <div className={style.caramid}>

@@ -1,6 +1,7 @@
 .caraContainer{
     display: flex;
     width: 100%;
+    gap:1rem;
 }
 .footer{
     margin-top: 2rem;
@@ -9,4 +10,10 @@
 .caramid{
     margin-left: 8rem;
     
+}
+@media screen and (max-width:1241px) {
+    /* .caraContainer{
+        display: flex;
+     
+    } */
 }

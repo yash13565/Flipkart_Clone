@@ -1,17 +1,18 @@
 .caraimg{
     height: 10.7rem;
-    
+    width:9rem;
 }
 .maincont{
     margin-top: 1.4rem;
-    margin-right: 1rem;
-    margin-left: -1.4rem;
     height: 20.1rem;
     border: 2px solid rgb(255, 255, 255);
     box-shadow: 0px 0px 7px 0.2px;
     z-index: -1;
-    width: 75rem;
+    width: 72.6rem;
+  
     cursor: pointer;
+    margin-left: -2rem;
+    
 }
     
 .maincont h3{
@@ -33,6 +34,16 @@
 .maincont h4,h3,h2{
     margin-left: 1rem;
 }
-@media screen and (max-width:1488px) {
-   
+@media screen and (max-width:1024px) {
+   .maincont{
+       /* margin-left: 2rem;
+       display: flex; */
+       
+   }
 }
+
+@media screen and (max-width:768px) {
+    .maincont{
+        margin-left: 2rem;
+    }
+ }
